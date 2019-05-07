@@ -1,4 +1,4 @@
-public class stringManipulator {
+public class StringManipulator {
     public static String prependToWord(String s ,String word){
         return s + word;
     }

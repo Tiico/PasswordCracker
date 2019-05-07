@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ef29a1e-afcd-461c-8f48-bd9b2d51af5b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../HW5/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../HW5/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AssInc/dict.txt" beforeDir="false" afterPath="$PROJECT_DIR$/AssInc/dict.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Cracker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cracker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stringManipulator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stringManipulator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PasswordCrack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PasswordCrack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/crackerValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CrackerValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stringManipulator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StringManipulator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/wordShuffler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/wordShuffler.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -14,49 +18,13 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="1593965246">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.open.time.2" value="1" />
-          <entry key="project.opened" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="INSTRUCTIONS" value="1" />
-          <entry key="Makefile" value="2" />
-          <entry key="java" value="14" />
-          <entry key="txt" value="11" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="JAVA" value="14" />
-          <entry key="PLAIN_TEXT" value="14" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="dummy" value="29" />
-          <entry key="java" value="6019" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="JAVA" value="6019" />
-          <entry key="PLAIN_TEXT" value="29" />
-        </counts>
-      </usages-collector>
-    </session>
-  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/PasswordCrack.java">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="33" selection-start-column="33" selection-end-column="33" />
+              <caret column="38" lean-forward="true" selection-start-column="38" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -64,12 +32,39 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Cracker.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="22" column="26" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
+            <state relative-caret-position="884">
+              <caret line="58" column="9" lean-forward="true" selection-start-line="58" selection-start-column="9" selection-end-line="58" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#889#897#0" expanded="true" />
+                <element signature="e#1192#1201#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Account.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AssInc/passwd1.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AssInc/passwd1-plain.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="7" lean-forward="true" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -77,11 +72,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/wordShuffler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="43" column="64" selection-start-line="43" selection-start-column="64" selection-end-line="43" selection-end-column="64" />
+            <state relative-caret-position="113">
+              <caret line="28" column="101" selection-start-line="28" selection-start-column="101" selection-end-line="28" selection-end-column="101" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#736#744#0" expanded="true" />
+                <element signature="e#812#820#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -105,18 +100,15 @@
         <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/CipherValidator.java" />
         <option value="$PROJECT_DIR$/src/crackerValidator.java" />
-        <option value="$PROJECT_DIR$/src/PasswordCrack.java" />
         <option value="$PROJECT_DIR$/src/stringManipulator.java" />
+        <option value="$PROJECT_DIR$/src/account.java" />
+        <option value="$PROJECT_DIR$/src/Account.java" />
+        <option value="$PROJECT_DIR$/src/PasswordCrack.java" />
+        <option value="$PROJECT_DIR$/AssInc/passwd1-plain.txt" />
         <option value="$PROJECT_DIR$/src/Cracker.java" />
         <option value="$PROJECT_DIR$/src/wordShuffler.java" />
       </list>
     </option>
-  </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="624" />
@@ -132,44 +124,40 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="PasswordCrack" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PasswordCrack" type="462c0819:PsiDirectoryNode" />
+              <item name="PasswordCracker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PasswordCracker" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="PasswordCrack" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PasswordCrack" type="462c0819:PsiDirectoryNode" />
+              <item name="PasswordCracker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PasswordCracker" type="462c0819:PsiDirectoryNode" />
               <item name="AssInc" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="PasswordCrack" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PasswordCrack" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PasswordCrack" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PasswordCrack" type="462c0819:PsiDirectoryNode" />
+              <item name="PasswordCracker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PasswordCracker" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557236969087" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/AssInc" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557257321033" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -196,6 +184,8 @@
   </component>
   <component name="RunManager">
     <configuration name="PasswordCrack" type="Application" factoryName="Application" temporary="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="11" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="PasswordCrack" />
       <module name="PasswordCrack" />
       <option name="PROGRAM_PARAMETERS" value="AssInc/dict.txt AssInc/passwd1.txt" />
@@ -222,14 +212,15 @@
       <option name="presentableId" value="Default" />
       <updated>1557208860757</updated>
       <workItem from="1557208864602" duration="26323000" />
+      <workItem from="1557251808057" duration="5509000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26323000" />
+    <option name="totallyTimeSpent" value="31832000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="-6" width="1513" height="973" extended-state="6" />
+    <frame x="64" y="-8" width="1864" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
@@ -237,20 +228,22 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.21924399" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.22172949" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" order="0" weight="0.32977462" />
       <window_info anchor="bottom" id="Version Control" order="1" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="2" />
       <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="4" />
-      <window_info anchor="bottom" id="Find" order="5" weight="0.32977462" />
-      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.2657177" />
+      <window_info anchor="bottom" id="Find" order="5" weight="0.32917964" />
+      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.2647975" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Debug" order="8" weight="0.39976275" />
+      <window_info anchor="bottom" id="Debug" order="8" weight="0.39875388" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="11" />
+      <window_info anchor="right" id="Maven" />
       <window_info anchor="right" id="Capture Analysis" order="0" />
       <window_info anchor="right" id="Theme Preview" order="1" />
       <window_info anchor="right" id="Palette&#9;" order="2" />
@@ -264,9 +257,6 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/exceptions/DeniedAccessException.java">
@@ -290,17 +280,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/exceptions/InvalidFileFormatException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/exceptions/InvalidFileFormatException.java" />
     <entry file="file://$PROJECT_DIR$/AssInc/passwd2.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AssInc/passwd1-plain.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/AssInc/passwd2-plain.txt">
@@ -316,7 +297,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/crackerValidator.java">
+    <entry file="file://$PROJECT_DIR$/src/CrackerValidator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
           <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
@@ -334,45 +315,59 @@
         <state relative-caret-position="-1934318" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AssInc/passwd1.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="49" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/stringManipulator.java">
+    <entry file="file://$PROJECT_DIR$/src/StringManipulator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="15" column="6" lean-forward="true" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/PasswordCrack.java">
+    <entry file="file://$PROJECT_DIR$/src/Cracker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="33" selection-start-column="33" selection-end-column="33" />
+        <state relative-caret-position="884">
+          <caret line="58" column="9" lean-forward="true" selection-start-line="58" selection-start-column="9" selection-end-line="58" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1192#1201#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Cracker.java">
+    <entry file="file://$PROJECT_DIR$/AssInc/passwd1.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="22" column="26" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#889#897#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="102">
+          <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AssInc/passwd1-plain.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="7" lean-forward="true" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PasswordCrack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="38" lean-forward="true" selection-start-column="38" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Account.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/wordShuffler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="43" column="64" selection-start-line="43" selection-start-column="64" selection-end-line="43" selection-end-column="64" />
+        <state relative-caret-position="113">
+          <caret line="28" column="101" selection-start-line="28" selection-start-column="101" selection-end-line="28" selection-end-column="101" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#736#744#0" expanded="true" />
+            <element signature="e#812#820#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -417,7 +412,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>1.8</last-edited>
+          <last-edited>11</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -434,6 +429,7 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

@@ -2,6 +2,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.LinkedList;
 import java.util.Scanner;
 
 public class Cracker {
@@ -15,15 +16,16 @@ public class Cracker {
 
     public void crack(){
         String[][] passEntries = extractPassInfo(passwords);
-        String[] names = extractNames(passEntries);
-        wordShuffler ws = new wordShuffler(names[0]);
+
+        LinkedList<Account> accountList = populateAccountList(passEntries);
+
+        wordShuffler ws = new wordShuffler(accountList.get(2).lastname);
         for (int i = 0; i < 14; i++){
             ws.shuffle();
-            printList(ws.getShuffled());
             ws.nextType();
         }
+        printList(ws.getAllShuffled());
 
-        System.out.println();
 
 
 
@@ -34,15 +36,28 @@ public class Cracker {
             System.out.println(list[i]);
         }
     }
+//    private void printLinkedList(LinkedList<Account> list){
+//        for (int i = 0; i < list.size(); i++){
+//            System.out.print(list.get(i).firstname + " ");
+//            System.out.print(list.get(i).lastname);
+//            System.out.println();
+//        }
+//    }
 
-    private static String[] extractNames(String[][] passInfo) {
-        String[] result = new String[passInfo.length * 2];
-        int k = 0;
+    private static LinkedList<Account> populateAccountList(String[][] passInfo) {
+        LinkedList<Account> accountList = new LinkedList<Account>();
         for (int i = 0; i < passInfo.length; i++){
-            result[k++] = passInfo[i][4].split(" ")[0];
-            result[k++] = passInfo[i][4].split(" ")[1];
+            String[] accountCreds = passInfo[i][4].split(" ");
+            if (accountCreds[0].contains(".") ){
+                accountList.add(new Account(accountCreds[1], accountCreds[2]));
+                continue;
+            }else if(accountCreds[1].contains(".")){
+                accountList.add(new Account(accountCreds[0], accountCreds[2]));
+                continue;
+            }
+            accountList.add(new Account(accountCreds[0], accountCreds[1]));
         }
-        return result;
+        return accountList;
     }
 
     private static String[][] extractPassInfo(File pass){

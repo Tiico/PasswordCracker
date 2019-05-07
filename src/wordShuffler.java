@@ -14,7 +14,7 @@ public class wordShuffler {
     }
     private String word;
     private ArrayList<String> shuffled = new ArrayList<String>();
-    Iterator<shuffleTypes> iter = Arrays.stream(shuffleTypes.values()).iterator();
+    Iterator<shuffleTypes> iterator = Arrays.stream(shuffleTypes.values()).iterator();
     private shuffleTypes currentType;
 
     public wordShuffler(String word){
@@ -26,66 +26,69 @@ public class wordShuffler {
             nextType();
         }
         System.out.println("Switching with: " + currentType);
+        //TODO Add more cases or modify existing to handle for example toggle-case with appended char
         switch (currentType){
             case PREPEND:
                 for (String s : characters){
-                    shuffled.add(stringManipulator.prependToWord(s, word));
+                    shuffled.add(StringManipulator.prependToWord(s, word));
                 }
                 break;
             case APPEND:
                 for (String s : characters){
-                    shuffled.add(stringManipulator.appendToWord(s, word));
+                    shuffled.add(StringManipulator.appendToWord(s, word));
                 }
                 break;
             case DELETEFIRST:
-                shuffled.add(stringManipulator.deleteFirst(word));
+                shuffled.add(StringManipulator.deleteFirst(word));
                 break;
             case DELETELAST:
-                shuffled.add(stringManipulator.deleteLast(word));
+                shuffled.add(StringManipulator.deleteLast(word));
                 break;
             case REVERSE:
-                shuffled.add(stringManipulator.reverse(word));
+                shuffled.add(StringManipulator.reverse(word));
                 break;
             case DUPLICATE:
-                shuffled.add(stringManipulator.duplicate(word));
+                shuffled.add(StringManipulator.duplicate(word));
                 break;
             case REFLECTNORMAL:
-                shuffled.add(stringManipulator.reflectNormal(word));
+                shuffled.add(StringManipulator.reflectNormal(word));
                 break;
             case REFLECTREVERSE:
-                shuffled.add(stringManipulator.reflectReverse(word));
+                shuffled.add(StringManipulator.reflectReverse(word));
                 break;
             case UPPERCASE:
-                shuffled.add(stringManipulator.upperCase(word));
+                shuffled.add(StringManipulator.upperCase(word));
                 break;
             case LOWERCASE:
-                shuffled.add(stringManipulator.lowerCase(word));
+                shuffled.add(StringManipulator.lowerCase(word));
                 break;
             case CAPITALIZE:
-                shuffled.add(stringManipulator.capitalize(word));
+                shuffled.add(StringManipulator.capitalize(word));
                 break;
             case NCAPITALIZE:
-                shuffled.add(stringManipulator.nCapitalize(word));
+                shuffled.add(StringManipulator.nCapitalize(word));
                 break;
             case TOGGLE:
-                shuffled.add(stringManipulator.toggle(word));
+                shuffled.add(StringManipulator.toggle(word));
                 break;
             case TOGGLEREVERSE:
-                shuffled.add(stringManipulator.toggleReverse(word));
+                shuffled.add(StringManipulator.toggleReverse(word));
                 break;
         }
     }
-    public String[] getShuffled(){
+    public String[] getAllShuffled(){
         return Arrays.copyOf(shuffled.toArray(), shuffled.toArray().length, String[].class);
     }
 
     public String nextType() {
-        if (iter.hasNext()){
-            currentType = iter.next();
-            shuffled.clear();
+        if (iterator.hasNext()){
+            currentType = iterator.next();
         }else{
             return null;
         }
         return currentType.toString();
     }
+//    public String[] getAllShuffled(){
+//
+//    }
 }

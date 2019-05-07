@@ -5,7 +5,7 @@ import exceptions.InvalidNumberException;
 import java.io.File;
 import java.io.FileNotFoundException;
 
-public class crackerValidator {
+public class CrackerValidator {
     public static void validate(String[] args) throws InvalidNumberException, IllegalArgumentException, FileAccessException {
         if (args.length == 2) {
 

@@ -26,7 +26,7 @@ public class wordShuffler {
             nextType();
         }
         System.out.println("Switching with: " + currentType);
-        //TODO Add more cases or modify existing to handle for example toggle-case with appended char
+        //TODO Check for duplicates, now we get duplicates thanks to lowercase/uppercase/capitalize when original word is already of one of those forms.
         switch (currentType){
             case PREPEND:
                 for (String s : characters){
@@ -46,33 +46,73 @@ public class wordShuffler {
                 break;
             case REVERSE:
                 shuffled.add(StringManipulator.reverse(word));
+                for (String s : characters){
+                    shuffled.add(StringManipulator.appendToWord(s, StringManipulator.reverse(word)));
+                    shuffled.add(StringManipulator.prependToWord(s, StringManipulator.reverse(word)));
+                }
                 break;
             case DUPLICATE:
                 shuffled.add(StringManipulator.duplicate(word));
+                for (String s : characters){
+                    shuffled.add(StringManipulator.appendToWord(s, StringManipulator.duplicate(word)));
+                    shuffled.add(StringManipulator.prependToWord(s, StringManipulator.duplicate(word)));
+                }
                 break;
             case REFLECTNORMAL:
                 shuffled.add(StringManipulator.reflectNormal(word));
+                for (String s : characters){
+                    shuffled.add(StringManipulator.appendToWord(s, StringManipulator.reflectNormal(word)));
+                    shuffled.add(StringManipulator.prependToWord(s, StringManipulator.reflectNormal(word)));
+                }
                 break;
             case REFLECTREVERSE:
                 shuffled.add(StringManipulator.reflectReverse(word));
+                for (String s : characters){
+                    shuffled.add(StringManipulator.appendToWord(s, StringManipulator.reflectReverse(word)));
+                    shuffled.add(StringManipulator.prependToWord(s, StringManipulator.reflectReverse(word)));
+                }
                 break;
             case UPPERCASE:
                 shuffled.add(StringManipulator.upperCase(word));
+                for (String s : characters){
+                    shuffled.add(StringManipulator.appendToWord(s, StringManipulator.upperCase(word)));
+                    shuffled.add(StringManipulator.prependToWord(s, StringManipulator.upperCase(word)));
+                }
                 break;
             case LOWERCASE:
                 shuffled.add(StringManipulator.lowerCase(word));
+                for (String s : characters){
+                    shuffled.add(StringManipulator.appendToWord(s, StringManipulator.lowerCase(word)));
+                    shuffled.add(StringManipulator.prependToWord(s, StringManipulator.lowerCase(word)));
+                }
                 break;
             case CAPITALIZE:
                 shuffled.add(StringManipulator.capitalize(word));
+                for (String s : characters){
+                    shuffled.add(StringManipulator.appendToWord(s, StringManipulator.capitalize(word)));
+                    shuffled.add(StringManipulator.prependToWord(s, StringManipulator.capitalize(word)));
+                }
                 break;
             case NCAPITALIZE:
                 shuffled.add(StringManipulator.nCapitalize(word));
+                for (String s : characters){
+                    shuffled.add(StringManipulator.appendToWord(s, StringManipulator.nCapitalize(word)));
+                    shuffled.add(StringManipulator.prependToWord(s, StringManipulator.nCapitalize(word)));
+                }
                 break;
             case TOGGLE:
                 shuffled.add(StringManipulator.toggle(word));
+                for (String s : characters){
+                    shuffled.add(StringManipulator.appendToWord(s, StringManipulator.toggle(word)));
+                    shuffled.add(StringManipulator.prependToWord(s, StringManipulator.toggle(word)));
+                }
                 break;
             case TOGGLEREVERSE:
                 shuffled.add(StringManipulator.toggleReverse(word));
+                for (String s : characters){
+                    shuffled.add(StringManipulator.appendToWord(s, StringManipulator.toggleReverse(word)));
+                    shuffled.add(StringManipulator.prependToWord(s, StringManipulator.toggleReverse(word)));
+                }
                 break;
         }
     }

@@ -1,9 +1,9 @@
 public class stringManipulator {
-    public static String prependToWord(char c ,String word){
-        return c + word;
+    public static String prependToWord(String s ,String word){
+        return s + word;
     }
-    public static String appendToWord(char c ,String word){
-        return word + c;
+    public static String appendToWord(String s ,String word){
+        return word + s;
     }
     public static String deleteFirst(String word){
         return word.substring(1);

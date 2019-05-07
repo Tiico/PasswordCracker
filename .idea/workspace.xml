@@ -3,12 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6ef29a1e-afcd-461c-8f48-bd9b2d51af5b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../HW5/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../HW5/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Cracker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cracker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PasswordCrack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PasswordCrack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stringManipulator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stringManipulator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/wordShuffler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/wordShuffler.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,24 +25,24 @@
           <entry key="INSTRUCTIONS" value="1" />
           <entry key="Makefile" value="2" />
           <entry key="java" value="13" />
-          <entry key="txt" value="9" />
+          <entry key="txt" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="JAVA" value="13" />
-          <entry key="PLAIN_TEXT" value="12" />
+          <entry key="PLAIN_TEXT" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="29" />
-          <entry key="java" value="3840" />
+          <entry key="java" value="4036" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="3840" />
+          <entry key="JAVA" value="4036" />
           <entry key="PLAIN_TEXT" value="29" />
         </counts>
       </usages-collector>
@@ -55,11 +50,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AssInc/Makefile">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/PasswordCrack.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -75,12 +65,21 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Cracker.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="29" column="36" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="36" />
+            <state relative-caret-position="85">
+              <caret line="19" column="34" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#889#897#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AssInc/passwd1.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="40" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -175,7 +174,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557226286235" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557228961194" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/AssInc" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
@@ -231,12 +230,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1557208860757</updated>
-      <workItem from="1557208864602" duration="16876000" />
+      <workItem from="1557208864602" duration="18509000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16876000" />
+    <option name="totallyTimeSpent" value="18509000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1513" height="973" extended-state="6" />
@@ -319,9 +318,6 @@
     <entry file="file://$PROJECT_DIR$/AssInc/INSTRUCTIONS">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/AssInc/Makefile">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/jcrypt.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-6171">
@@ -346,16 +342,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AssInc/passwd1.txt">
+    <entry file="file://$PROJECT_DIR$/AssInc/Makefile">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/PasswordCrack.java">
+    <entry file="file://$PROJECT_DIR$/AssInc/dict.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="-1934318" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AssInc/passwd1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="40" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="40" />
         </state>
       </provider>
     </entry>
@@ -369,10 +367,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/PasswordCrack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Cracker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="29" column="36" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="36" />
+        <state relative-caret-position="85">
+          <caret line="19" column="34" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#889#897#0" expanded="true" />

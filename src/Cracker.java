@@ -15,19 +15,21 @@ public class Cracker {
 
     public void crack(){
         String[][] passEntries = extractPassInfo(passwords);
-        String[] test = extractNames(passEntries);
+        System.out.println("test: " + passEntries.length);
+        String[] names = extractNames(passEntries);
+        System.out.println(names[0]);
 
-        System.out.println(test[0]);
 
 
         /*wordShuffler.shuffle(fullname.split(" ")[1]);*/
     }
 
     private static String[] extractNames(String[][] passInfo) {
-        String[] result = new String[passInfo[0].length];
+        String[] result = new String[passInfo.length * 2];
         int k = 0;
-        for (int i = 0; i < passInfo[0].length; i++){
-            result[i] = passInfo[i][4];
+        for (int i = 0; i < passInfo.length; i++){
+            result[k++] = passInfo[i][4].split(" ")[0];
+            result[k++] = passInfo[i][4].split(" ")[1];
         }
         return result;
     }

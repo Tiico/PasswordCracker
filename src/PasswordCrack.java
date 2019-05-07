@@ -2,9 +2,6 @@ import exceptions.FileAccessException;
 import exceptions.InvalidNumberException;
 
 import java.io.File;
-import java.io.FileNotFoundException;
-import java.util.ArrayList;
-import java.util.Scanner;
 
 public class PasswordCrack {
 
@@ -20,26 +17,10 @@ public class PasswordCrack {
         final File dictionary = new File(args[0]);
         final File passFile = new File(args[1]);
 
-        String[] passargs = extractPassInfo(passFile);
-        String username = passargs[0];
-        String salt = passargs[1].substring(0,2);
-        String hash = passargs[1].substring(1);
-        String fullname = passargs[4];
-        String firstname = fullname.split(" ")[0];
-        String lastname = fullname.split(" ")[1];
-
         System.out.println(jcrypt.crypt("(b", "amazing"));
+
+        Cracker cracker = new Cracker(dictionary, passFile);
+        cracker.crack();
     }
 
-    private static String[] extractPassInfo(File pass){
-        Scanner sc = null;
-        try {
-            sc = new Scanner(pass);
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
-        String passEntry = sc.nextLine();
-
-        return passEntry.split(":");
-    }
 }

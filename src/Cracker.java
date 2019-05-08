@@ -3,8 +3,9 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.Scanner;
+import java.util.concurrent.Callable;
 
-public class Cracker {
+public class Cracker implements Callable {
     File dictionary;
     File passwords;
 
@@ -20,9 +21,17 @@ public class Cracker {
         ArrayList<String> dict = readFromFile(dictionary);
 
         sweep(accountList, dict);
-
-
     }
+    public String call(){
+        try{
+            crack();
+        }
+        catch (Exception e){
+            System.out.println ("Exception is caught");
+        }
+        return null;
+    }
+
 
     private void sweep(LinkedList<Account> accs, ArrayList<String> dict){
         ArrayList<String> words = dict;

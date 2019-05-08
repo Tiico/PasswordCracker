@@ -8,7 +8,7 @@ public class wordShuffler {
             "x", "y", "z", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O",
             "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"};
     private enum shuffleTypes {
-            PREPEND, APPEND, DELETEFIRST, DELETELAST, REVERSE, DUPLICATE,
+            PLAIN, PREPEND, APPEND, DELETEFIRST, DELETELAST, REVERSE, DUPLICATE,
             REFLECTNORMAL, REFLECTREVERSE, UPPERCASE, LOWERCASE, CAPITALIZE,
             NCAPITALIZE, TOGGLE, TOGGLEREVERSE
     }
@@ -27,6 +27,9 @@ public class wordShuffler {
             nextType();
         }
         switch (currentType){
+            case PLAIN:{
+                shuffled.add(word);
+            }
             case PREPEND:
                 for (String s : characters){
                     shuffled.add(StringManipulator.prependToWord(s, word));

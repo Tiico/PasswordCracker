@@ -1,5 +1,4 @@
-import java.io.File;
-import java.io.FileNotFoundException;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.LinkedList;
@@ -18,44 +17,90 @@ public class Cracker {
         String[][] passEntries = extractPassInfo(passwords);
 
         LinkedList<Account> accountList = populateAccountList(passEntries);
+        ArrayList<String> dict = readFromFile(dictionary);
 
-        wordShuffler ws = new wordShuffler(accountList.get(2).lastname);
-        for (int i = 0; i < 14; i++){
-            ws.shuffle();
-            ws.nextType();
-        }
-        printList(ws.getAllShuffled());
+        sweep(accountList, dict);
 
 
-
-
-        /*wordShuffler.shuffle(fullname.split(" ")[1]);*/
     }
+
+    private void sweep(LinkedList<Account> accs, ArrayList<String> dict){
+        ArrayList<String> words = dict;
+        File common = new File("AssInc/common.txt");
+        words.addAll(0, readFromFile(common));
+        ArrayList<String> result = new ArrayList<String>();
+        contlabel:
+        for (Account a : accs) {
+            System.out.println("Account: " + a.getFirstname() + " " + a.getLastname());
+            words.add(0, a.getFirstname());
+            words.add(0, a.getLastname());
+            for (String s : words) {
+                wordShuffler ws = new wordShuffler(s);
+                ws.generateShuffled();
+                for (int i = 0; i < ws.getShuffled().length; i++){
+                    if (a.getHash().equals(jcrypt.crypt(a.getSalt(),ws.getShuffled()[i]))){
+                        String pass = ws.getShuffled()[i];
+                        System.out.println("Pass found! " + pass);
+                        result.add(pass);
+                        continue contlabel;
+                    }
+                }
+            }
+        }
+        writeToFile(Arrays.copyOf(result.toArray(), result.toArray().length, String[].class));
+    }
+
     private void printList(String[] list){
         for (int i = 0; i < list.length; i++){
             System.out.println(list[i]);
         }
     }
-//    private void printLinkedList(LinkedList<Account> list){
-//        for (int i = 0; i < list.size(); i++){
-//            System.out.print(list.get(i).firstname + " ");
-//            System.out.print(list.get(i).lastname);
-//            System.out.println();
-//        }
-//    }
+    private void print2DList(String[][] list){
+        for (int i = 0; i < list.length; i++){
+            for (int j = 0; j < list[0].length; j++) {
+                System.out.println(list[i][j]);
+            }
+        }
+    }
+    public static void writeToFile(String[] source){
+        BufferedWriter out = null;
+        try {
+            out = new BufferedWriter(new FileWriter("AssInc/passwd2-plain.txt"));
+            for (int i = 0; i < source.length; i++){
+                out.write(source[i]);
+                out.newLine();
+            }
+            out.flush();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 
+    public static ArrayList<String> readFromFile(File source){
+        Scanner sc = null;
+        try {
+            sc = new Scanner(source);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        ArrayList<String> list = new ArrayList<String>();
+        while(sc.hasNext()){
+            list.add(sc.nextLine());
+        }
+        return list;
+    }
     private static LinkedList<Account> populateAccountList(String[][] passInfo) {
         LinkedList<Account> accountList = new LinkedList<Account>();
         for (int i = 0; i < passInfo.length; i++){
             String[] accountCreds = passInfo[i][4].split(" ");
             if (accountCreds[0].contains(".") ){
-                accountList.add(new Account(accountCreds[1], accountCreds[2]));
+                accountList.add(new Account(accountCreds[1], accountCreds[2], passInfo[i][1].substring(0,2), passInfo[i][1]));
                 continue;
             }else if(accountCreds[1].contains(".")){
-                accountList.add(new Account(accountCreds[0], accountCreds[2]));
+                accountList.add(new Account(accountCreds[0], accountCreds[2], passInfo[i][1].substring(0,2), passInfo[i][1]));
                 continue;
             }
-            accountList.add(new Account(accountCreds[0], accountCreds[1]));
+            accountList.add(new Account(accountCreds[0], accountCreds[1], passInfo[i][1].substring(0,2), passInfo[i][1]));
         }
         return accountList;
     }
